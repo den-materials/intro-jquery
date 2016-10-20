@@ -1,4 +1,4 @@
----
+<!---
 title: Intro To jQuery
 type: lesson
 duration: "1:25"
@@ -6,16 +6,20 @@ creator:
     name: Gerry Mathe, Elie Schoppik
     city: London, San Francisco
 competencies: Front-end intro
----
+--->
+
+<!--9:40 5 minutes -->
+
+<!-- Hook: Raise your hand if you thought the LOTR DOM manipulation lab was easy.  A lot of other people think the same way as you.  That is why people started creating tools to make this job easier.  And that is exactly what jQuery does. -->
 
 # Intro To jQuery
 
 ### Objectives
 *After this lesson, students will be able to:*
 
-- Describe jQuery and the context to use it
-- Include jQuery in your projects
-- Practice using jQuery selectors
+- **Describe** jQuery and the context to use it
+- **Include** jQuery in your projects
+- **Practice** using jQuery selectors
 
 
 ### Preparation
@@ -25,7 +29,7 @@ competencies: Front-end intro
 - Use a text editor
 - Explain CSS selectors
 
-## jQuery - Intro (5 mins)
+## jQuery - Intro
 
 #### What is jQuery?
 jQuery is a 3rd-party library that is intended to make front-end development tasks — particularly those involving DOM selection and manipulation — easier, faster, and more fun.
@@ -40,7 +44,9 @@ We've already seen that we can make our jobs easier and faster by using Node mod
 
 jQuery helps us manipulate the DOM, allowing us to perform complex manipulations using less code with less hassle.  jQuery's syntax was developed to mimic CSS selector syntax, making code easier to develop, read, and manage; also, the syntax is more concise, and jQuery solves many cross-browser compatibility issues for us.
 
-## Using jQuery - Demo (5 mins)
+<!--9:45 5 minutes -->
+
+## Using jQuery - Demo
 
 #### Installation
 jQuery is a client side library, which means we need to include it in our HTML. To do this, we have two options:
@@ -62,7 +68,9 @@ From a CDN (content delivery network) like [CDNJS](https://cdnjs.com/) or [Googl
 
 If you look carefully at the filenames of the jQuery versions you download, or just look at the URL in the "src" attribute for each script tag above, you'll notice something at the end of each file name — namely, that they end in 'min.js'. This means the JavaScript code has been minified.
 
-## Minified? Did I read that right? Discussion (10 mins)
+<!--9:50 10 minutes -->
+
+## Minified? Did I read that right? Discussion
 
 Yep. You did. Minification is the process of making a JavaScript file smaller by, among other things, removing all line breaks and whitespace, reducing the length of variable and function names, and stripping out all comments. Minification can significantly reduce the size of a JavaScript file, and in turn, significantly decrease the time it takes our browsers to load the file into memory.
 
@@ -82,7 +90,9 @@ If you've visited code.jquery.com, you'll see that there are two major versions 
   - The 1.x branch is the most cross-browser-compatible version of the jQuery core
   - The 2.x branch, while offering some new features, is not compatible with older web browsers — most notably, it's not compatible with Internet Explorer versions 8 and below
 
-## DOM manipulation with jQuery - Intro (40 mins)
+<!--10:00 35 minutes -->
+
+## DOM manipulation with jQuery - Intro
 
 Before we get into jQuery, let's just think about how we would perform the following tasks:
   - `select` a DIV and change it's content
@@ -292,8 +302,9 @@ $('#outerContainer').append($newDiv);
 
 See this in action (and play around with it) [on JSBin](http://jsbin.com/gupade/3/edit?html,js,output)
 
+<!--10:30 20 minutes -->
 
-## Reddit - Independent Practice (20 mins)
+## Reddit - Independent Practice
 
 Following the directions below to practice using jQuery:
 
