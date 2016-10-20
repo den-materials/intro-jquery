@@ -17,7 +17,7 @@ competencies: Front-end intro
 ### Objectives
 *After this lesson, students will be able to:*
 
-- **Describe** jQuery and the context to use it
+- **Describe** jQuery and the context to use it in
 - **Include** jQuery in your projects
 - **Practice** using jQuery selectors
 
@@ -35,7 +35,6 @@ competencies: Front-end intro
 jQuery is a 3rd-party library that is intended to make front-end development tasks — particularly those involving DOM selection and manipulation — easier, faster, and more fun.
 
 ##### But wait, what do we mean by 'library'?
-We've already seen that we can make our jobs easier and faster by using Node modules (AKA libraries) in our apps.
 
 **A `library`** is just a collection of reusable methods that serve a particular purpose.
 
@@ -53,22 +52,23 @@ jQuery is a client side library, which means we need to include it in our HTML. 
 
 1. Reference jQuery from a server on the internet:
 
-- Directly from jQuery's website (http://code.jquery.com/)
-`<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>`
-From a CDN (content delivery network) like [CDNJS](https://cdnjs.com/) or [Google Hosted Libraries](https://developers.google.com/speed/libraries/)
+ - Directly from jQuery's website (http://code.jquery.com/)
+	`<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>`
 
-
-`<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>`
+ - From a CDN (content delivery network) like [CDNJS](https://cdnjs.com/) or [Google Hosted Libraries](https://developers.google.com/speed/libraries/)
+	`<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>`
 
 2. Download a copy of jQuery to host on your own server:
 
-[CDNJS](http://www.cdnjs.com), [Google Hosted Libraries](https://developers.google.com/speed/libraries/), and the [jQuery site](http://www.jquery.com) will all allow you to download a copy of jQuery to include in your projects.
+- [CDNJS](http://www.cdnjs.com), [Google Hosted Libraries](https://developers.google.com/speed/libraries/), and the [jQuery site](http://www.jquery.com) will all allow you to download a copy of jQuery to include in your projects.
 
 #### What's with the 'min.js' in the name of the jQuery file?
 
 If you look carefully at the filenames of the jQuery versions you download, or just look at the URL in the "src" attribute for each script tag above, you'll notice something at the end of each file name — namely, that they end in 'min.js'. This means the JavaScript code has been minified.
 
 <!--9:50 10 minutes -->
+
+<!-- Make sure you show both minified and non-minified versions here -->
 
 ## Minified? Did I read that right? Discussion
 
@@ -78,9 +78,9 @@ In jQuery's 1.11.1's case, the original unminified code is about 276 kilobytes, 
 
 Minified scripts can be difficult to read, so most servers that host jQuery and other libraries will also offer the original (non-minified) version of the code so developers can understand the code.
 
-Minification is performed on a JavaScript when it's ready for release and there are many options for doing this. If you'd like to minify your own scripts, try a Google search to check out the various options. Or, you can try the [Closure Compiler from Google](https://developers.google.com/closure/compiler/) which runs locally on your computer like any other piece of software you might use as a developer.
+Minification is performed on JavaScript when it's ready for release and there are many options for doing this. If you'd like to minify your own scripts, try a Google search to check out the various options. Or, you can try the [Closure Compiler from Google](https://developers.google.com/closure/compiler/) which runs locally on your computer like any other piece of software you might use as a developer.
 
-Also, if you do happen to come across a library where you can't find a non-minified version to look at, software also exists to decompress a minified script. These are usually called unminifiers, pretty-printers, or beautifier). They take a minified JavaScript and attempt to decompress it, making it easier to read and understand.
+Also, if you do happen to come across a library where you can't find a non-minified version to look at, software also exists to decompress a minified script. These are usually called unminifiers, pretty-printers, or beautifiers). They take a minified JavaScript and attempt to decompress it, making it easier to read and understand.
 
 **Even if you don't fully understand the code, it's a good exercise to visit code.jquery.com and take a look at minified and non-minified jQuery.**
 
