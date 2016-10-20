@@ -25,9 +25,9 @@ competencies: Front-end intro
 ### Preparation
 *Before this lesson, students should already be able to:*
 
-- Use vanilla JavaScript to manipulate the DOM
-- Use a text editor
-- Explain CSS selectors
+- **Use** vanilla JavaScript to manipulate the DOM
+- **Use** a text editor
+- **Explain** CSS selectors
 
 ## jQuery - Intro
 
