@@ -97,7 +97,6 @@ If you've visited code.jquery.com, you'll see that there are two major versions 
 Before we get into jQuery, let's just think about how we would perform the following tasks:
   - `select` a DIV and change it's content
   - `append` a new DIV with some content to a web page
-  - `handle` forms where users want to dynamically add elements to the page
   - `listen` for events on a collection of DIVs or other HTML elements
     + For example, a blog site might have a "like" button for each comment on a post.
 
@@ -128,12 +127,9 @@ If you use variable assignment when doing a selection, a "jQuery" object is retu
 
 // We prepend '$' to variable names when a variable is going to be a jQuery object to help us remember what that variable is for.
 var $jqObject = $('p'); // Returns a jQuery object containing all <p> tags on your web page.
-
-// However, we don't have to prepend '$' to our variables. It's just so we can remember what a variable is being used for.
-var jqObject = $('p'); // This is functionally identical to the version above that includes the '$' in front of jqObject.
 ```
 
-#### Selecting a DOM element and changing it's content
+#### Selecting a DOM element and changing its content
 
 In this HTML:
 
@@ -306,15 +302,15 @@ See this in action (and play around with it) [on JSBin](http://jsbin.com/gupade/
 
 ## Reddit - Independent Practice
 
-Following the directions below to practice using jQuery:
+Follow the directions below to practice using jQuery:
 
 - Go to http://www.reddit.com
 
 - Reddit uses jQuery, so we can use our Chrome developer console to manipulate the site in real time using jQuery.
 
-- To do this, once Reddit.com has loaded, go to your view menu in Chrome. Select View > Developer > JavaScript Console
+- To do this, once Reddit.com has loaded, open the Console tab of Chrome Developer Tools
 
-- Once that's loaded, try entering the following command into the Chrome REPL:
+- Once that's loaded, try entering the following command into the Console:
 
 ```javascript
 $('img').hide()
@@ -329,11 +325,11 @@ $('img').show()
 
 - That should have brought all the images back. Make sense so far?
 
-- Now with the chrome inspector, try to match the title of the first Reddit post and replace the text using `.text()` or `.html()`.
+- Now use the Chrome `Inspect`or, and try to match the title of the first Reddit post and replace the text using `.text()` or `.html()`.
 
 - Try to replace the blue background in the header by another color using the function `.css()`.
 
-- Now try some of the other examples we've gone over in the Chrome REPL and see what happens to the Reddit.com website. Remember, this is your laboratory — your chance to experiment and learn. Make use of it.
+- Now try some of the other examples we went over earlier in this lesson in the Chrome Console, and see what happens to the Reddit.com website. Remember, this is your laboratory — your chance to experiment and learn. Make use of it.
 
 ## Conclusion
 
