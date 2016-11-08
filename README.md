@@ -68,8 +68,6 @@ If you look carefully at the filenames of the jQuery versions you download, or j
 
 <!--9:50 10 minutes -->
 
-<!-- Make sure you show both minified and non-minified versions here -->
-
 ## Minified? Did I read that right? Discussion
 
 Yep. You did. Minification is the process of making a JavaScript file smaller by, among other things, removing all line breaks and whitespace, reducing the length of variable and function names, and stripping out all comments. Minification can significantly reduce the size of a JavaScript file, and in turn, significantly decrease the time it takes our browsers to load the file into memory.
@@ -82,6 +80,8 @@ Minification is performed on JavaScript when it's ready for release and there ar
 
 Also, if you do happen to come across a library where you can't find a non-minified version to look at, software also exists to decompress a minified script. These are usually called unminifiers, pretty-printers, or beautifiers). They take a minified JavaScript and attempt to decompress it, making it easier to read and understand.
 
+<!-- Make sure you show both minified and non-minified versions here -->
+
 **Even if you don't fully understand the code, it's a good exercise to visit code.jquery.com and take a look at minified and non-minified jQuery.**
 
 #### And one more thing: 1.x vs. 2.x jQuery
@@ -92,6 +92,8 @@ If you've visited code.jquery.com, you'll see that there are two major versions 
 
 <!--10:00 35 minutes -->
 
+<!--Do all code out in Sublime with input from devs -->
+
 ## DOM manipulation with jQuery - Intro
 
 Before we get into jQuery, let's just think about how we would perform the following tasks:
@@ -99,6 +101,8 @@ Before we get into jQuery, let's just think about how we would perform the follo
   - `append` a new DIV with some content to a web page
   - `listen` for events on a collection of DIVs or other HTML elements
     + For example, a blog site might have a "like" button for each comment on a post.
+
+<!-- Have devs think about how they would do this for plain Javascript -->
 
 #### First, let's just talk about selecting an element with jQuery
 
@@ -209,7 +213,7 @@ In the jQuery code example above, we first select the DIV with `id="container"`,
   </div>
 ```
 
-You can [see this in action on JSBin](http://jsbin.com/rocabu/1/edit?)
+You can [see this in action on JSBin](http://jsbin.com/rocabu/1/edit?html,js,output)
 
 
 #### Modifying Styles (CSS) Using jQuery
