@@ -8,7 +8,7 @@ creator:
 competencies: Front-end intro
 --->
 
-<!--9:40 5 minutes -->
+<!--9:45 5 minutes -->
 
 <!-- Hook: Raise your hand if you thought the LOTR DOM manipulation lab was easy.  A lot of other people think the same way as you.  That is why people started creating tools to make this job easier.  And that is exactly what jQuery does. -->
 
@@ -43,7 +43,7 @@ jQuery is a 3rd-party library that is intended to make front-end development tas
 
 jQuery helps us manipulate the DOM, allowing us to perform complex manipulations using less code with less hassle.  jQuery's syntax was developed to mimic CSS selector syntax, making code easier to develop, read, and manage; also, the syntax is more concise, and jQuery solves many cross-browser compatibility issues for us.
 
-<!--9:45 5 minutes -->
+<!--9:50 5 minutes -->
 
 ## Using jQuery - Demo
 
@@ -66,7 +66,7 @@ jQuery is a client side library, which means we need to include it in our HTML. 
 
 If you look carefully at the filenames of the jQuery versions you download, or just look at the URL in the "src" attribute for each script tag above, you'll notice something at the end of each file name — namely, that they end in 'min.js'. This means the JavaScript code has been minified.
 
-<!--9:50 10 minutes -->
+<!--9:55 10 minutes -->
 
 ## Minified? Did I read that right? Discussion
 
@@ -90,9 +90,9 @@ If you've visited code.jquery.com, you'll see that there are two major versions 
   - The 1.x branch is the most cross-browser-compatible version of the jQuery core
   - The 2.x branch, while offering some new features, is not compatible with older web browsers — most notably, it's not compatible with Internet Explorer versions 8 and below
 
-<!--10:00 35 minutes -->
+<!--10:05 >10 minutes -->
 
-<!--Do all code out in Sublime with input from devs -->
+<!--Do all code out in Sublime with input from devs.  Devs at half-mast the whole time -->
 
 ## DOM manipulation with jQuery - Intro
 
@@ -102,7 +102,7 @@ Before we get into jQuery, let's just think about how we would perform the follo
   - `listen` for events on a collection of DIVs or other HTML elements
     + For example, a blog site might have a "like" button for each comment on a post.
 
-<!-- Have devs think about how they would do this for plain Javascript -->
+<!-- Have devs think about how they would do this for plain Javascript for a minute -->
 
 #### First, let's just talk about selecting an element with jQuery
 
@@ -173,6 +173,8 @@ There are three things about the example above that make jQuery easier to use:
   1. jQuery is using the same syntax as CSS to select elements
   2. jQuery allows us to chain methods together to accomplish our goals (i.e., $().html(...) ), making code shorter and easier to understand
   3. jQuery deals with any cross-browser compatibility issues, which may not seem like a big deal in this example, but which quickly become difficult to deal with as things get more complex
+
+<!--10:15 >10 minutes -->
 
 #### Appending a DOM element to a web page
 
@@ -257,6 +259,8 @@ var randColor = function() {
 $(".myClass").css("color", randColor() );
 ```
 
+<!--10:30 <10 minutes -->
+
 #### Adding and Removing Elements Using jQuery
 
 Sometimes in a dynamic web application, user-input is meant to trigger the addition or removal of content or functionality. Using jQuery, we can easily create new DOM elements and insert them into the DOM, or remove existing elements (and any content they contain) from the DOM.
@@ -292,17 +296,16 @@ $newDiv = $('<div>');
 // Add hipster ipsum content
 $newDiv.html("Farm-to-table Godard roof party bespoke, fashion axe mustache vinyl.");
 
-// Set it's class to innerItem
+// Set its class to innerItem
 $newDiv.addClass("innerItem");
 
 // Append our new element  
 $('#outerContainer').append($newDiv);
 ```
 
-
 See this in action (and play around with it) [on JSBin](http://jsbin.com/gupade/3/edit?html,js,output)
 
-<!--10:30 20 minutes -->
+<!--10:40 15 minutes -->
 
 ## Reddit - Independent Practice
 
