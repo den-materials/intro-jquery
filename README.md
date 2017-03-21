@@ -8,6 +8,7 @@ creator:
 competencies: Front-end intro
 --->
 
+<!--Actually 10:00 -->
 <!--9:45 5 minutes -->
 
 <!-- Hook: Raise your hand if you thought the LOTR DOM manipulation lab was easy.  A lot of other people think the same way as you.  That is why people started creating tools to make this job easier.  And that is exactly what jQuery does. -->
@@ -174,6 +175,7 @@ There are three things about the example above that make jQuery easier to use:
   2. jQuery allows us to chain methods together to accomplish our goals (i.e., $().html(...) ), making code shorter and easier to understand
   3. jQuery deals with any cross-browser compatibility issues, which may not seem like a big deal in this example, but which quickly become difficult to deal with as things get more complex
 
+<!--Actually 10:22 -->
 <!--10:15 >10 minutes -->
 
 #### Appending a DOM element to a web page
@@ -259,6 +261,7 @@ var randColor = function() {
 $(".myClass").css("color", randColor() );
 ```
 
+<!--10:31 -->
 <!--10:30 <10 minutes -->
 
 #### Adding and Removing Elements Using jQuery
@@ -305,6 +308,9 @@ $('#outerContainer').append($newDiv);
 
 See this in action (and play around with it) [on JSBin](http://jsbin.com/gupade/3/edit?html,js,output)
 
+<!--Adding in remove cuz we left it out -->
+
+<!--Actually 10:38 -->
 <!--10:40 15 minutes -->
 
 ## Reddit - Independent Practice
