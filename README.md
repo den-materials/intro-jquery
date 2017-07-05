@@ -8,6 +8,7 @@ creator:
 competencies: Front-end intro
 --->
 
+<!--10:00 WDI4 -->
 <!--Actually 10:00 -->
 <!--9:45 5 minutes -->
 
@@ -45,6 +46,7 @@ jQuery is a 3rd-party library that is intended to make front-end development tas
 jQuery helps us manipulate the DOM, allowing us to perform complex manipulations using less code with less hassle.  jQuery's syntax was developed to mimic CSS selector syntax, making code easier to develop, read, and manage; also, the syntax is more concise, and jQuery solves many cross-browser compatibility issues for us.
 
 <!--9:50 5 minutes -->
+<!--10:07 WDI4 -->
 
 ## Using jQuery - Demo
 
@@ -98,6 +100,7 @@ If you've visited code.jquery.com, you'll see that there are two major versions 
   - The 2.x branch is the most cross-browser-compatible version of the jQuery core
   - The 3.x branch offers some new features. Some of these are continuing the additions that came with ES6, and others make coding with jQuery even easier. For a full list of new features, you can check out [this link](http://developer.telerik.com/featured/whats-new-in-jquery-3/).
 
+<!--10:19 WDI4 -->
 <!--10:05 >10 minutes -->
 
 <!--Do all code out in Sublime with input from devs.  Devs at half-mast the whole time -->
@@ -183,6 +186,7 @@ There are three things about the example above that make jQuery easier to use:
   3. jQuery deals with any cross-browser compatibility issues, which may not seem like a big deal in this example, but which quickly become difficult to deal with as things get more complex
 
 <!--Actually 10:22 -->
+<!--10:28 WDI4 -->
 <!--10:15 >10 minutes -->
 
 #### Appending a DOM element to a web page
@@ -315,9 +319,14 @@ $('#outerContainer').append($newDiv);
 
 See this in action (and play around with it) [on JSBin](http://jsbin.com/gupade/3/edit?html,js,output)
 
-<!--Adding in remove cuz we left it out -->
+Now, let's get rid of all the hipster ipsum we just made:
+
+```javascript
+$('#outerContainer').remove();
+```
 
 <!--Actually 10:38 -->
+<!--10:39 WDI4 -->
 <!--10:40 15 minutes -->
 
 ## Reddit - Independent Practice
