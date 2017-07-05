@@ -54,10 +54,13 @@ jQuery is a client side library, which means we need to include it in our HTML. 
 1. Reference jQuery from a server on the internet:
 
  - Directly from jQuery's website (http://code.jquery.com/)
-	`<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>`
+	`<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>`
 
  - From a CDN (content delivery network) like [CDNJS](https://cdnjs.com/) or [Google Hosted Libraries](https://developers.google.com/speed/libraries/)
-	`<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>`
+	`<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>`
 
 2. Download a copy of jQuery to host on your own server:
 
@@ -67,13 +70,17 @@ jQuery is a client side library, which means we need to include it in our HTML. 
 
 If you look carefully at the filenames of the jQuery versions you download, or just look at the URL in the "src" attribute for each script tag above, you'll notice something at the end of each file name — namely, that they end in 'min.js'. This means the JavaScript code has been minified.
 
+#### What's with the `integrity` and `crossorigin` attributes?
+
+The `integrity` and `crossorigin` attributes are used for Subresource Integrity (SRI) checking. This allows browsers to ensure that resources hosted on third-party servers have not been tampered with. Use of SRI is recommended as a best-practice, whenever libraries are loaded from a third-party source. Read more at ![srihash.org](srihash.org).
+
 <!--9:55 10 minutes -->
 
 ## Minified? Did I read that right? Discussion
 
 Yep. You did. Minification is the process of making a JavaScript file smaller by, among other things, removing all line breaks and whitespace, reducing the length of variable and function names, and stripping out all comments. Minification can significantly reduce the size of a JavaScript file, and in turn, significantly decrease the time it takes our browsers to load the file into memory.
 
-In jQuery's 1.11.1's case, the original unminified code is about 276 kilobytes, whereas the minified code is only 94 kilobytes. That makes the minified version **one-third** the size of the original - not bad!
+In jQuery's 3.2.1's case, the original unminified code is about 268 kilobytes, whereas the minified code is only 87 kilobytes. That makes the minified version **one-third** the size of the original - not bad!
 
 Minified scripts can be difficult to read, so most servers that host jQuery and other libraries will also offer the original (non-minified) version of the code so developers can understand the code.
 
@@ -85,11 +92,11 @@ Also, if you do happen to come across a library where you can't find a non-minif
 
 **Even if you don't fully understand the code, it's a good exercise to visit code.jquery.com and take a look at minified and non-minified jQuery.**
 
-#### And one more thing: 1.x vs. 2.x jQuery
+#### And one more thing: 2.x vs. 3.x jQuery
 
 If you've visited code.jquery.com, you'll see that there are two major versions in development:
-  - The 1.x branch is the most cross-browser-compatible version of the jQuery core
-  - The 2.x branch, while offering some new features, is not compatible with older web browsers — most notably, it's not compatible with Internet Explorer versions 8 and below
+  - The 2.x branch is the most cross-browser-compatible version of the jQuery core
+  - The 3.x branch offers some new features. Some of these are continuing the additions that came with ES6, and others make coding with jQuery even easier. For a full list of new features, you can check out [this link](http://developer.telerik.com/featured/whats-new-in-jquery-3/).
 
 <!--10:05 >10 minutes -->
 
@@ -349,3 +356,7 @@ $('img').show()
 - jQuery makes JavaScript super friendly and easy to write. a lot of websites are using jQuery, soon you will too.  Remember that it's always good to know how to use what is called vanilla JavaScript, or JavaScript without a library.
 
 - Please spend some time reviewing [the documentation](https://api.jquery.com/).
+
+## Resources
+
+- [What's New in jQuery 3](http://developer.telerik.com/featured/whats-new-in-jquery-3/)
