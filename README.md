@@ -74,7 +74,7 @@ If you look carefully at the filenames of the jQuery versions you download, or j
 
 #### What's with the `integrity` and `crossorigin` attributes?
 
-The `integrity` and `crossorigin` attributes are used for Subresource Integrity (SRI) checking. This allows browsers to ensure that resources hosted on third-party servers have not been tampered with. Use of SRI is recommended as a best-practice, whenever libraries are loaded from a third-party source. Read more at ![srihash.org](srihash.org).
+The `integrity` and `crossorigin` attributes are used for Subresource Integrity (SRI) checking. This allows browsers to ensure that resources hosted on third-party servers have not been tampered with. Use of SRI is recommended as a best-practice, whenever libraries are loaded from a third-party source. Read more at [srihash.org](srihash.org).
 
 <!--9:55 10 minutes -->
 
