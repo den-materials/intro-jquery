@@ -10,6 +10,7 @@ competencies: Front-end intro
 
 <!--10:00 WDI4 -->
 <!--Actually 10:00 -->
+<!--WDI5 9:48 -->
 <!--9:45 5 minutes -->
 
 <!-- Hook: Raise your hand if you thought the LOTR DOM manipulation lab was easy.  A lot of other people think the same way as you.  That is why people started creating tools to make this job easier.  And that is exactly what jQuery does. -->
@@ -45,6 +46,7 @@ jQuery is a 3rd-party library that is intended to make front-end development tas
 
 jQuery helps us manipulate the DOM, allowing us to perform complex manipulations using less code with less hassle.  jQuery's syntax was developed to mimic CSS selector syntax, making code easier to develop, read, and manage; also, the syntax is more concise, and jQuery solves many cross-browser compatibility issues for us.
 
+<!--WDI5 9:53 -->
 <!--9:50 5 minutes -->
 <!--10:07 WDI4 -->
 
@@ -76,6 +78,8 @@ If you look carefully at the filenames of the jQuery versions you download, or j
 
 The `integrity` and `crossorigin` attributes are used for Subresource Integrity (SRI) checking. This allows browsers to ensure that resources hosted on third-party servers have not been tampered with. Use of SRI is recommended as a best-practice, whenever libraries are loaded from a third-party source. Read more at [srihash.org](srihash.org).
 
+<!-- Catch-up add jQuery to an index.html file in a folder called `first_jquery` -->
+
 <!--9:55 10 minutes -->
 
 ## Minified? Did I read that right? Discussion
@@ -100,6 +104,7 @@ If you've visited code.jquery.com, you'll see that there are two major versions 
   - The 2.x branch is the most cross-browser-compatible version of the jQuery core
   - The 3.x branch offers some new features. Some of these are continuing the additions that came with ES6, and others make coding with jQuery even easier. For a full list of new features, you can check out [this link](http://developer.telerik.com/featured/whats-new-in-jquery-3/).
 
+<!--WDI5 10:09 -->
 <!--10:19 WDI4 -->
 <!--10:05 >10 minutes -->
 
@@ -108,7 +113,7 @@ If you've visited code.jquery.com, you'll see that there are two major versions 
 ## DOM manipulation with jQuery - Intro
 
 Before we get into jQuery, let's just think about how we would perform the following tasks:
-  - `select` a DIV and change it's content
+  - `select` a DIV and change its content
   - `append` a new DIV with some content to a web page
   - `listen` for events on a collection of DIVs or other HTML elements
     + For example, a blog site might have a "like" button for each comment on a post.
@@ -144,6 +149,7 @@ If you use variable assignment when doing a selection, a "jQuery" object is retu
 var $jqObject = $('p'); // Returns a jQuery object containing all <p> tags on your web page.
 ```
 
+<!--Catch up on this one (no vanilla JS, just jQuery) -->
 #### Selecting a DOM element and changing its content
 
 In this HTML:
@@ -185,10 +191,12 @@ There are three things about the example above that make jQuery easier to use:
   2. jQuery allows us to chain methods together to accomplish our goals (i.e., $().html(...) ), making code shorter and easier to understand
   3. jQuery deals with any cross-browser compatibility issues, which may not seem like a big deal in this example, but which quickly become difficult to deal with as things get more complex
 
+<!--WDI5 10:25 -->
 <!--Actually 10:22 -->
 <!--10:28 WDI4 -->
 <!--10:15 >10 minutes -->
 
+<!--Just show this one, no catch-up -->
 #### Appending a DOM element to a web page
 
 If we had the following HTML page...
@@ -251,6 +259,8 @@ $(".myClass").css("color", "blue");
 
 [You'll find this example here](http://jsbin.com/yutoyi/1/edit?html,js,output)
 
+<!--WDI5 10:33 -->
+
 But that seems kind of boring. I mean, what if we want to do something with less hard-coding using jQuery.
 
 [Here's a repeat of the last example](http://jsbin.com/wevoti/1/edit?html,js,output) that sets the text in all elements of class="myClass" to a random color. Try to understand how it works before moving on:
@@ -272,6 +282,7 @@ var randColor = function() {
 $(".myClass").css("color", randColor() );
 ```
 
+<!--10:35 WDI5 -->
 <!--10:31 -->
 <!--10:30 <10 minutes -->
 
@@ -325,6 +336,7 @@ Now, let's get rid of all the hipster ipsum we just made:
 $('#outerContainer').remove();
 ```
 
+<!--WDI5 10:42 -->
 <!--Actually 10:38 -->
 <!--10:39 WDI4 -->
 <!--10:40 15 minutes -->
@@ -362,7 +374,7 @@ $('img').show()
 
 ## Conclusion
 
-- jQuery makes JavaScript super friendly and easy to write. a lot of websites are using jQuery, soon you will too.  Remember that it's always good to know how to use what is called vanilla JavaScript, or JavaScript without a library.
+- jQuery makes JavaScript super friendly and easy to write. A lot of websites are using jQuery, soon you will too.  Remember that it's always good to know how to use what is called vanilla JavaScript, or JavaScript without a library.
 
 - Please spend some time reviewing [the documentation](https://api.jquery.com/).
 
