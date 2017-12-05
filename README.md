@@ -8,6 +8,7 @@ creator:
 competencies: Front-end intro
 --->
 
+<!--9:55 WDI6 -->
 <!--10:00 WDI4 -->
 <!--Actually 10:00 -->
 <!--WDI5 9:48 -->
@@ -106,6 +107,7 @@ If you've visited code.jquery.com, you'll see that there are two major versions 
 
 <!--WDI5 10:09 -->
 <!--10:19 WDI4 -->
+<!--WDI6 10:12 -->
 <!--10:05 >10 minutes -->
 
 <!--Do all code out in Sublime with input from devs.  Devs at half-mast the whole time -->
@@ -260,6 +262,7 @@ $(".myClass").css("color", "blue");
 [You'll find this example here](http://jsbin.com/yutoyi/1/edit?html,js,output)
 
 <!--WDI5 10:33 -->
+<!--WDI6 10:41 -->
 
 But that seems kind of boring. I mean, what if we want to do something with less hard-coding using jQuery.
 
@@ -336,6 +339,7 @@ Now, let's get rid of all the hipster ipsum we just made:
 $('#outerContainer').remove();
 ```
 
+<!--WDI6 10:49 -->
 <!--WDI5 10:42 -->
 <!--Actually 10:38 -->
 <!--10:39 WDI4 -->
@@ -371,6 +375,8 @@ $('img').show()
 - Try to replace the blue background in the header by another color using the function `.css()`.
 
 - Now try some of the other examples we went over earlier in this lesson in the Chrome Console, and see what happens to the Reddit.com website. Remember, this is your laboratory — your chance to experiment and learn. Make use of it.
+
+<!--WDI6 11:03, 11:06 done -->
 
 ## Conclusion
 
